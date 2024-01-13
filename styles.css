@@ -1,0 +1,285 @@
+body {
+  background-image: url("images/mount.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 9vw;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+header {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(50%);
+
+}
+/* Top Nav Bar */
+nav {
+  width: 100vw;
+  height: auto;
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px;
+}
+
+.headerul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.headerli {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.headerli a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1em;
+  font-weight: 700;
+  transition: font-size 0.3s;
+}
+
+.headerli a:hover {
+  font-size: 1.2em;
+}
+
+/* Hamburger on mobile */
+@media only screen and (max-width: 600px) {
+  .headerli {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 5em;
+    margin-right: 30px;
+  }
+
+  /* Hide hamburger on larger screens */
+  @media only screen and (min-width: 601px) {
+    .hamburger-icon {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+/* Main Section Wrapper Keeps Everything at 80% */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make your brand stand out */
+
+.brand {
+  font-size: 3vw;
+}
+
+/* Black Div Styles */
+.black {
+  background-color: #232323;
+  height: auto;
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  border-radius: 7px;
+  color: white;
+  font-size: 1.25rem;
+}
+
+/* White Div Styles */
+.white {
+  background-color: white;
+  height: auto;
+  width: 80%;
+   padding: 20px;
+  box-sizing: border-box; 
+  margin-bottom: 50px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem; 
+}
+
+/* Opaque Divs Styles */
+.opaque {
+  height: auto;
+  width: 80%;
+  margin-bottom: 50px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.opaquecen {
+  height: auto;
+  width: 80%;
+  margin-bottom: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Testimonials */
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.testimonial {
+  background-color: white;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 7px;
+  max-width: 300px;
+  text-align: left;
+  text-align: center;
+}
+.singleServeContainer {
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.serve-text-column {
+  max-width: 60%;
+}
+
+.serve-image-column img {
+  max-width: 80%;
+  max-height: 500px;
+  margin: 10px;
+}
+
+/*The Packages*/
+
+/* larger screens */
+.packageContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.package {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.package img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.serve-image-column img,
+.package img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.package h2,
+.package p {
+  margin: 0;
+}
+
+/* small screens */
+@media screen and (max-width: 768px) {
+  .packageContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Bottom Main Footer */
+.bottomFooter {
+  width: 100vw;
+  margin: -10px;
+  height: auto;
+  background-color: #333;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.footerul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerli {
+  text-align: right;
+  margin-right: 20px; 
+}
+
+.footerli a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1em;
+  font-weight: 700;
+  transition: font-size 0.3s; 
+
+}
+
+.footerli a:hover {
+  font-size: 1.2em; 
+}
+
+/* Center align on mobile */
+@media only screen and (max-width: 600px) {
+  .footerli {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px; 
+  }
+}
+
+
+
+

@@ -1,166 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Alpine Designs</title>
-  <style>
-
-    body {
-      background-image: url("mount.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-      margin: 0; 
-    }
-
-    h1 {
-      font-size: 9vw;
-    }
-
-    header {
-      height: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .bottomFooter {
-      width: 100vw;
-      background-color: black;
-      margin: -10px;
-      height: 500px;
-    }
-
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-    }
-
-    .black {
-      background-color: black;
-      height: auto;
-      width: 80%;
-
-      margin-bottom: 50px;
-      border-radius: 7px;
-      color: white;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    .white{
-      background-color: white;
-      height: 500px;
-      width: 80%;
-      margin-bottom: 50px;
-      border-radius: 7px;
-      display: flex;
-      justify-content: center;
-      align-items: center; 
-    
-    }
-      ul {
-      list-style: none; }
-
-    .opaque {
-      height: auto;
-      width: 80%;
-      margin-bottom: 50px;
-      border-radius: 7px;
-      background-color: rgba(255, 255, 255, 0.3);
-
-    }
-
-     .opaquecen {
-      height: 500px;
-      width: 80%;
-      margin-bottom: 50px;
-      border-radius: 7px;
-      background-color: rgba(255, 255, 255, 0.3);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } 
-    
-    .brand {
-      font-size: 3vw;
-    }
-    .testimonials {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 20px;
-    }
-
-    .testimonial {
-      background-color: white;
-      padding: 15px;
-      margin: 20px;
-      border-radius: 7px;
-      max-width: 300px;
-      text-align: left;
-      text-align: center;
-    }
-    .singleServeContainer {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .serve-text-column {
-      max-width: 60%;
-    }
-
-    .serve-image-column img {
-      max-width: 100%;
-      height: auto;
-    }
-
-/*The Packages*/
-
-
-.packageContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto; 
-  grid-gap: 20px;
-}
-
-.package {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  text-align: center;
-}
-
-.package img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px; 
-}
-
-    .serve-image-column img,
-    .package img {
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-
-.package h2, .package p {
-  margin: 0; 
-}
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
+
 <body>
+
+ <nav>
+<ul class="headerul">
+  <li class="headerli"><a href="home.html" target="_blank">HOME</a></li>
+  <li class="headerli"><a href="services.html" target="_blank">SERVICES</a></li>
+  <li class="headerli"><a href="about.html" target="_blank">ABOUT</a></li>
+  <li class="headerli"><a href="blog.html" target="_blank">BLOG</a></li>
+  <li class="headerli"><a href="contact.html" target="_blank">CONTACT</a></li>
+</ul>
+  <div class="hamburger-icon">&#9776;</div>
+
+</nav> 
+
+
+
+
+
   <header>
     <h1>Alpine Designs</h1>
   </header>
+
+
+
 
   <main class="wrapper">
     <section class="black">
@@ -178,22 +48,20 @@
     <section class="white">
   <section>
     <h2>Complete Design Services Includes:</h2>
-    <ul>
-      <li>✅ Web Design and Development</li>
-      <li>✅ Blogging including Wordpress</li>
-      <li>✅ Social Media Marketing</li>
-      <li>✅ Brand development including Style Guides</li>
-      <li>✅ General graphic design services including print and digital design</li>
-      <li>✅ E-books including Amazon Kindle Direct Publishing & Adobe InDesign</li>
-      <li>✅ E-Mail Marketing Templates</li>
-      <li>✅ Any other small business design-related tasks</li>
-    </ul>
+<p>✅ Web Design and Development</p>
+<p>✅ Blogging including Wordpress</p>
+<p>✅ Social Media Marketing</p>
+<p>✅ Brand development including Style Guides</p>
+<p>✅ General graphic design services including print and digital design</p>
+<p>✅ E-books including Amazon Kindle Direct Publishing & Adobe InDesign</p>
+<p>✅ E-Mail Marketing Templates</p>
+<p>✅ Any other small business design-related tasks</p>
   </section>
 
     </section>
 
  <section class="black">
-    <h2>The Stack</h2>
+    <h2>The Stack:</h2>
     <p>These are the tools I use to help you succeed:</p>
     <ul>
       <li>🖥️ HTML, CSS & JAVASCRIPT</li>
@@ -207,7 +75,7 @@
 
 
 <section class="opaque">
-  <h2>Testimonials</h2>
+  <h2>Testimonials:</h2>
 
   <div class="testimonials">
     <article class="testimonial">
@@ -250,25 +118,25 @@
       <h2>Interested?</h2>
       <p>🧗🏿‍♀️ Single Service 🧗<br>$50/hour</p>
 
-      <ul>
-        <li>☑️ This service is for people who just want a few things done, or a trial of services.</li>
-        <li>☑️ Reach out to me with your request and I am happy to provide a free quote!</li>
-        <li>☑️ Most small tasks take a day or 2 to complete.</li>
-      </ul>
+
+        <p>☑️ This service is for people who just want a few things done, or a trial of services.</p>
+        <p>☑️ Reach out to me with your request and I am happy to provide a free quote!</p>
+        <p>☑️ Most small tasks take a day or 2 to complete.</p>
+ 
     </div>
 
     <div class="serve-image-column">
-      <img src="your-image.jpg" alt="Service Image">
+      <img src="Images/doggo.jpg" alt="Girl and dog">
     </div>
   </div>
     </section>
 
 
 <section class="black">  
-  <h2>The Packages</h2>  
+  <h2>The Packages:</h2>  
   <div class="packageContainer">
     <div class="package">
-      <img src="your-image-red.jpg" alt="Red Package Image">
+      <img src="Images/friend.jpg" alt="Red Package Image">
       <h2>🏔️ The Red 🏔️</h2>
       <p>$1200/month</p>
       <ul>
@@ -279,26 +147,26 @@
     </div>
 
     <div class="package">
-      <img src="your-image-robson.jpg" alt="Robson Package Image">
       <h2>🗻 The Robson 🗻</h2>
       <p>$2000/month</p>
       <ul>
-        <li>☑️ This package offers unlimited requests and up to 80 hours of labour per month.</li>
-        <li>☑️ You can add as many requests as you want to the cue and they're completed 2 by 2.</li>
-        <li>☑️ Most small tasks take a day to complete.</li>
+        <li>✅ This package offers unlimited requests and up to 80 hours of labour per month.</li>
+        <li>✅ You can add as many requests as you want to the cue and they're completed 2 by 2.</li>
+        <li>✅ Most small tasks take a day to complete.</li>
       </ul>
+     <img src="Images/hike.jpg" alt="Robson Package Image">
+
     </div>
   </div>
   <h2>
   ✏️ Clients decide what is the most important to them. 🖋️<br><br>
-
 😃 Pause or cancel anytime- only pay for what you use. 😃 <br><br>
 
 LETS GET STARTED
 </h2>
 </section>
 
-<section class="opaquecen">
+<section class="white">
   <article>
     <h2>A note from the designer:</h2>
     <p>As an entrepreneur with over a decade of experience, I have seen many of my peers get lost in the forest of design services.<br><br> That's why I put together my design services focused on 3 things:</p>
@@ -312,6 +180,18 @@ LETS GET STARTED
 </section>
   </main>
 
-  <footer class="bottomFooter"></footer>
+  <footer class="bottomFooter">
+
+
+<ul class="footerul">
+  <li class="footerli"><a href="home.html" target="_blank">HOME</a></li>
+  <li class="footerli"><a href="services.html" target="_blank">SERVICES</a></li>
+  <li class="footerli"><a href="about.html" target="_blank">ABOUT</a></li>
+  <li class="footerli"><a href="blog.html" target="_blank">BLOG</a></li>
+  <li class="footerli"><a href="contact.html" target="_blank">CONTACT</a></li>
+</ul>
+
+
+  </footer>
 </body>
 </html>
